@@ -35,15 +35,16 @@ Copy code
 ## ⚙️ Setup Instructions
 
 ### 1. Clone Repository
+
 ```bash
 git clone https://github.com/ishanjain1408/library-api.git
-cd library-management-system
+cd library-api
 2. Install Dependencies
 bash
 Copy code
 npm install
 3. Setup Environment Variables
-Create a .env file in the root folder based on .env.example:
+Create a .env file in the root directory based on .env.example and add the following:
 
 ini
 Copy code
@@ -53,21 +54,18 @@ JWT_SECRET=yourSecretKey
 JWT_EXPIRES_IN=1d
 4. Start Server
 Development
-
 bash
 Copy code
 npm run dev
 Production
-
 bash
 Copy code
 npm start
-Server runs on: http://localhost:5000
+Server runs at: http://localhost:5000
 
 🗄️ Database Schema / ER Diagram
 Entities
-User
-
+🧑‍💼 User
 name: String
 
 email: String (unique)
@@ -78,8 +76,7 @@ role: String (enum: Admin, Member)
 
 pendingFees: Number (default: 0)
 
-Book
-
+📖 Book
 title: String
 
 author: String
@@ -88,8 +85,7 @@ ISBN: String (unique)
 
 copiesAvailable: Number
 
-BorrowRecord
-
+🔁 BorrowRecord
 user: ObjectId (ref: User)
 
 book: ObjectId (ref: Book)
@@ -100,7 +96,7 @@ returnDate: Date (nullable)
 
 fee: Number (default: 0)
 
-ER Diagram
+ER Diagram (Text Representation)
 sql
 Copy code
 User (Admin/Member)
@@ -112,17 +108,14 @@ BorrowRecord
 Book
 📖 API Documentation
 You can test all endpoints using the provided Postman collection:
-👉 Postman Collection Link (replace with your actual link)
+👉 Postman Collection Link (replace with actual link)
 
-Main Endpoints
 🔑 Authentication
-
 POST /api/auth/register → Register new user (Admin/Member)
 
 POST /api/auth/login → Login and receive JWT token
 
 📚 Book Management (Admin Only)
-
 POST /api/books → Add new book
 
 PUT /api/books/:id → Update book details
@@ -131,30 +124,28 @@ DELETE /api/books/:id → Delete book
 
 GET /api/books → List all books
 
-📖 Borrow & Return (Member Only)
+🔁 Borrow & Return (Member Only)
+POST /api/borrow/:bookId → Borrow a book
 
-POST /api/borrow/:bookId → Borrow book
-
-POST /api/return/:bookId → Return book (auto fee calculation if late)
+POST /api/return/:bookId → Return a book (auto fee calculation if late)
 
 📊 Reports
-
 GET /api/reports/member → Member: View borrowed/returned books & pending fees
 
 GET /api/reports/admin → Admin: View all borrowed books & pending fees of members
 
 ✅ Example Request & Response
 Login Request
-
-json
+http
 Copy code
 POST /api/auth/login
+Content-Type: application/json
+
 {
   "email": "member1@example.com",
   "password": "password123"
 }
 Response
-
 json
 Copy code
 {
@@ -179,3 +170,8 @@ Swagger API documentation
 Ishan Jain
 📧 Email: ishanjain1408@gmail.com
 🔗 LinkedIn | GitHub
+
+yaml
+Copy code
+
+---
