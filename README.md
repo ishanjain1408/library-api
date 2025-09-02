@@ -40,8 +40,7 @@ Copy code
 git clone https://github.com/ishanjain1408/library-api.git
 cd library-api
 2. Install Dependencies
-bash
-Copy code
+
 npm install
 3. Setup Environment Variables
 Create a .env file in the root directory based on .env.example and add the following:
@@ -54,14 +53,12 @@ JWT_SECRET=yourSecretKey
 JWT_EXPIRES_IN=1d
 4. Start Server
 Development
-bash
-Copy code
+
 npm run dev
 Production
-bash
-Copy code
+
 npm start
-Server runs at: http://localhost:5000
+Server runs at: http://localhost:4000
 
 🗄️ Database Schema / ER Diagram
 Entities
@@ -145,8 +142,7 @@ Content-Type: application/json
   "email": "member1@example.com",
   "password": "password123"
 }
-Response
-json
+
 Copy code
 {
   "success": true,
@@ -156,7 +152,7 @@ Copy code
     "name": "John Doe",
     "role": "Member"
   }
-}
+
 🔮 Future Enhancements
 Pagination & filtering for books
 
