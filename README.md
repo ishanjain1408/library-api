@@ -27,6 +27,8 @@ Library-Management-System/
 │── server.js # Entry point
 │── README.md # Documentation
 
+yaml
+Copy code
 
 ---
 
@@ -34,15 +36,17 @@ Library-Management-System/
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/ishanjain1408/library-api
+git clone https://github.com/ishanjain1408/library-api.git
 cd library-management-system
 2. Install Dependencies
+bash
+Copy code
 npm install
 3. Setup Environment Variables
 Create a .env file in the root folder based on .env.example:
 
-env
-
+ini
+Copy code
 PORT=5000
 MONGO_URI=mongodb://localhost:27017/libraryDB
 JWT_SECRET=yourSecretKey
@@ -50,14 +54,18 @@ JWT_EXPIRES_IN=1d
 4. Start Server
 Development
 
+bash
+Copy code
 npm run dev
 Production
 
+bash
+Copy code
 npm start
-Server runs on: http://localhost:4000
+Server runs on: http://localhost:5000
 
 🗄️ Database Schema / ER Diagram
-Entities:
+Entities
 User
 
 name: String
@@ -92,8 +100,9 @@ returnDate: Date (nullable)
 
 fee: Number (default: 0)
 
-ER Diagram:
-
+ER Diagram
+sql
+Copy code
 User (Admin/Member)
    │ 1 --- * │
    │         │
@@ -107,11 +116,13 @@ You can test all endpoints using the provided Postman collection:
 
 Main Endpoints
 🔑 Authentication
+
 POST /api/auth/register → Register new user (Admin/Member)
 
 POST /api/auth/login → Login and receive JWT token
 
 📚 Book Management (Admin Only)
+
 POST /api/books → Add new book
 
 PUT /api/books/:id → Update book details
@@ -121,20 +132,21 @@ DELETE /api/books/:id → Delete book
 GET /api/books → List all books
 
 📖 Borrow & Return (Member Only)
+
 POST /api/borrow/:bookId → Borrow book
 
 POST /api/return/:bookId → Return book (auto fee calculation if late)
 
 📊 Reports
+
 GET /api/reports/member → Member: View borrowed/returned books & pending fees
 
 GET /api/reports/admin → Admin: View all borrowed books & pending fees of members
 
 ✅ Example Request & Response
-Login
-Request
+Login Request
 
-json
+
 POST /api/auth/login
 {
   "email": "member1@example.com",
@@ -151,7 +163,7 @@ json
     "name": "John Doe",
     "role": "Member"
   }
-}
+
 🔮 Future Enhancements
 Pagination & filtering for books
 
@@ -166,5 +178,3 @@ Ishan Jain
 📧 Email: ishanjain1408@gmail.com
 🔗 [LinkedIn](https://www.linkedin.com/in/ishanjain1408/) | [GitHub](https://github.com/ishanjain1408)
 
-
----
