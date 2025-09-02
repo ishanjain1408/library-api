@@ -93,7 +93,6 @@ fee: Number (default: 0)
 
 ER Diagram:
 sql
-Copy code
 User (Admin/Member)
    │ 1 --- * │
    │         │
@@ -164,7 +163,7 @@ Swagger API documentation
 👨‍💻 Author
 Ishan Jain
 📧 Email: ishanjain1408@gmail.com
-🔗 LinkedIn | GitHub
+🔗 [LinkedIn](https://www.linkedin.com/in/ishanjain1408/) | [GitHub](https://github.com/ishanjain1408)
 
 
 
