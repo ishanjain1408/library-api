@@ -55,7 +55,7 @@ Server runs on: http://localhost:4000
 
 ---
 
-🗄️ Database Schema / ER Diagram
+## 🗄️ Database Schema / ER Diagram
 Entities:
 User
 
@@ -102,13 +102,13 @@ Book
 
 ---
 
-📖 API Documentation
+## 📖 API Documentation
 You can test all endpoints using the provided Postman collection:
 👉 Postman Collection Link (https://library-api-6846.postman.co/workspace/My-Workspace~dbdf0285-63b8-41dd-807e-828851cbe5b7/collection/34001461-4aa277b4-ca19-4dfb-98ce-7d203489e857?action=share&creator=34001461&active-environment=34001461-fec7f0ca-8fc2-4b15-8056-965a4f40d5ff)
 
 ---
 
-Main Endpoints
+## Main Endpoints
 🔑 Authentication
 POST /api/auth/register → Register new user (Admin/Member)
 
@@ -116,7 +116,7 @@ POST /api/auth/login → Login and receive JWT token
 
 ---
 
-📚 Book Management (Admin Only)
+## 📚 Book Management (Admin Only)
 POST /api/books → Add new book
 
 PUT /api/books/:id → Update book details
@@ -125,19 +125,19 @@ DELETE /api/books/:id → Delete book
 
 GET /api/books → List all books
 
-📖 Borrow & Return (Member Only)
+## 📖 Borrow & Return (Member Only)
 POST /api/borrow/:bookId → Borrow book
 
 POST /api/return/:bookId → Return book (auto fee calculation if late)
 
-📊 Reports
+## 📊 Reports
 GET /api/reports/member → Member: View borrowed/returned books & pending fees
 
 GET /api/reports/admin → Admin: View all borrowed books & pending fees of members
 
 ---
 
-✅ Example Request & Response
+## ✅ Example Request & Response
 Login
 Request
 
@@ -161,7 +161,7 @@ Response
 ---
 
 
-🔮 Future Enhancements
+## 🔮 Future Enhancements
 Pagination & filtering for books
 
 Email notifications for overdue books
@@ -173,7 +173,7 @@ Swagger API documentation
 ---
 
 
-👨‍💻 Author
+## 👨‍💻 Author
 Ishan Jain
 📧 Email: ishanjain1408@gmail.com
 🔗 [LinkedIn](https://www.linkedin.com/in/ishanjain1408/) | [GitHub](https://github.com/ishanjain1408)
