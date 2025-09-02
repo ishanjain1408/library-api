@@ -27,29 +27,26 @@ Library-Management-System/
 │── server.js # Entry point
 │── README.md # Documentation
 
-yaml
-Copy code
+
 
 ---
 
 ## ⚙️ Setup Instructions
 
 ### 1. Clone Repository
-git clone https://github.com/your-username/library-management-system.git
+git clone https://github.com/ishanjain1408/library-api
 cd library-management-system
 2. Install Dependencies
-Copy code
 npm install
 1. Setup Environment Variables
 Create a .env file in the root folder based on .env.example:
 
 env
-Copy code
 PORT=5000
 MONGO_URI=mongodb://localhost:27017/libraryDB
 JWT_SECRET=yourSecretKey
 JWT_EXPIRES_IN=1d
-4. Start Server
+1. Start Server
 Development
 
 npm run dev
@@ -138,7 +135,6 @@ Login
 Request
 
 json
-Copy code
 POST /api/auth/login
 {
   "email": "member1@example.com",
@@ -147,7 +143,6 @@ POST /api/auth/login
 Response
 
 json
-Copy code
 {
   "success": true,
   "token": "jwt-token-here",
@@ -171,7 +166,6 @@ Ishan Jain
 📧 Email: ishanjain1408@gmail.com
 🔗 LinkedIn | GitHub
 
-yaml
 
 
 ---
