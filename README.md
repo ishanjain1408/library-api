@@ -5,6 +5,7 @@ A backend system for managing a digital library. It includes user authentication
 ---
 
 ## 🚀 Tech Stack
+
 - **Backend Framework:** Node.js + Express.js  
 - **Database:** MongoDB (Mongoose ODM)  
 - **Authentication:** JWT (JSON Web Token)  
@@ -14,9 +15,9 @@ A backend system for managing a digital library. It includes user authentication
 ---
 
 ## 📂 Project Structure
+
 Library-Management-System/
-│── config/
-│ └── db.js # MongoDB connection
+│── config/ # MongoDB connection
 │── controllers/ # Route controllers
 │── middlewares/ # Auth & error handling
 │── models/ # Mongoose models
@@ -40,7 +41,8 @@ Copy code
 git clone https://github.com/ishanjain1408/library-api.git
 cd library-api
 2. Install Dependencies
-
+bash
+Copy code
 npm install
 3. Setup Environment Variables
 Create a .env file in the root directory based on .env.example and add the following:
@@ -53,15 +55,16 @@ JWT_SECRET=yourSecretKey
 JWT_EXPIRES_IN=1d
 4. Start Server
 Development
-
+bash
+Copy code
 npm run dev
 Production
-
+bash
+Copy code
 npm start
-Server runs at: http://localhost:4000
+Server runs at: http://localhost:5000 (Make sure the port matches your .env file)
 
 🗄️ Database Schema / ER Diagram
-Entities
 🧑‍💼 User
 name: String
 
@@ -105,7 +108,7 @@ BorrowRecord
 Book
 📖 API Documentation
 You can test all endpoints using the provided Postman collection:
-👉 Postman Collection Link (replace with actual link)
+👉 Postman Collection Link (Replace this with the actual link)
 
 🔑 Authentication
 POST /api/auth/register → Register new user (Admin/Member)
@@ -142,7 +145,8 @@ Content-Type: application/json
   "email": "member1@example.com",
   "password": "password123"
 }
-
+Sample Response
+json
 Copy code
 {
   "success": true,
@@ -152,7 +156,7 @@ Copy code
     "name": "John Doe",
     "role": "Member"
   }
-
+}
 🔮 Future Enhancements
 Pagination & filtering for books
 
@@ -167,7 +171,7 @@ Ishan Jain
 📧 Email: ishanjain1408@gmail.com
 🔗 LinkedIn | GitHub
 
-yaml
+markdown
 Copy code
 
 ---
