@@ -5,15 +5,17 @@ A backend system for managing a digital library. It includes user authentication
 ---
 
 ## 🚀 Tech Stack
-- **Backend Framework:** Node.js + Express.js  
-- **Database:** MongoDB (Mongoose ODM)  
-- **Authentication:** JWT (JSON Web Token)  
-- **Validation:** Joi / Express Validator  
-- **Environment Management:** dotenv  
+
+- **Backend Framework:** Node.js + Express.js
+- **Database:** MongoDB (Mongoose ODM)
+- **Authentication:** JWT (JSON Web Token)
+- **Validation:** Joi / Express Validator
+- **Environment Management:** dotenv
 
 ---
 
 ## 📂 Project Structure
+
 Library-Management-System/
 │── config/
 │ └── db.js # MongoDB connection
@@ -27,20 +29,20 @@ Library-Management-System/
 │── server.js # Entry point
 │── README.md # Documentation
 
-
 ---
 
 ## ⚙️ Setup Instructions
 
 ### 1. Clone Repository
+
 ```bash
-git clone https://github.com/your-username/library-management-system.git
+git clone https://github.com/ishanjain1408/library-api.git
 cd library-management-system
 2. Install Dependencies
 npm install
 3. Setup Environment Variables
 Create a .env file in the root folder based on .env.example:
-PORT=5000
+PORT=4000
 MONGO_URI=mongodb://localhost:27017/libraryDB
 JWT_SECRET=yourSecretKey
 JWT_EXPIRES_IN=1d
@@ -143,7 +145,6 @@ Response
     "name": "John Doe",
     "role": "Member"
   }
-}
 🔮 Future Enhancements
 Pagination & filtering for books
 
