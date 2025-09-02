@@ -146,7 +146,8 @@ GET /api/reports/admin → Admin: View all borrowed books & pending fees of memb
 ✅ Example Request & Response
 Login Request
 
-
+json
+Copy code
 POST /api/auth/login
 {
   "email": "member1@example.com",
@@ -155,6 +156,7 @@ POST /api/auth/login
 Response
 
 json
+Copy code
 {
   "success": true,
   "token": "jwt-token-here",
@@ -163,7 +165,7 @@ json
     "name": "John Doe",
     "role": "Member"
   }
-
+}
 🔮 Future Enhancements
 Pagination & filtering for books
 
@@ -176,5 +178,4 @@ Swagger API documentation
 👨‍💻 Author
 Ishan Jain
 📧 Email: ishanjain1408@gmail.com
-🔗 [LinkedIn](https://www.linkedin.com/in/ishanjain1408/) | [GitHub](https://github.com/ishanjain1408)
-
+🔗 LinkedIn | GitHub
