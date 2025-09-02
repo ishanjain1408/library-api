@@ -35,14 +35,12 @@ Copy code
 ## ⚙️ Setup Instructions
 
 ### 1. Clone Repository
-```bash
 git clone https://github.com/your-username/library-management-system.git
 cd library-management-system
 2. Install Dependencies
-bash
 Copy code
 npm install
-3. Setup Environment Variables
+1. Setup Environment Variables
 Create a .env file in the root folder based on .env.example:
 
 env
@@ -53,12 +51,10 @@ JWT_SECRET=yourSecretKey
 JWT_EXPIRES_IN=1d
 4. Start Server
 Development
-bash
-Copy code
+
 npm run dev
 Production
-bash
-Copy code
+
 npm start
 Server runs on: http://localhost:5000
 
@@ -176,6 +172,6 @@ Ishan Jain
 🔗 LinkedIn | GitHub
 
 yaml
-Copy code
+
 
 ---
