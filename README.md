@@ -35,14 +35,17 @@ Library-Management-System/
 ### 1. Clone Repository
 git clone https://github.com/ishanjain1408/library-api.git
 cd library-management-system
+
 2. Install Dependencies
 npm install
+
 3. Setup Environment Variables
 Create a .env file in the root folder based on .env.example:
 PORT=4000
 MONGO_URI=mongodb://localhost:27017/libraryDB
 JWT_SECRET=yourSecretKey
 JWT_EXPIRES_IN=1d
+
 4. Start Server
 Development
 npm run dev
