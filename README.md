@@ -53,7 +53,7 @@ Production
 npm start
 Server runs on: http://localhost:4000
 
-
+---
 
 🗄️ Database Schema / ER Diagram
 Entities:
@@ -99,16 +99,21 @@ BorrowRecord
    │ * --- 1 │
    │         │
 Book
+
+---
+
 📖 API Documentation
 You can test all endpoints using the provided Postman collection:
 👉 Postman Collection Link (https://library-api-6846.postman.co/workspace/My-Workspace~dbdf0285-63b8-41dd-807e-828851cbe5b7/collection/34001461-4aa277b4-ca19-4dfb-98ce-7d203489e857?action=share&creator=34001461&active-environment=34001461-fec7f0ca-8fc2-4b15-8056-965a4f40d5ff)
 
+---
 Main Endpoints
 🔑 Authentication
 POST /api/auth/register → Register new user (Admin/Member)
 
 POST /api/auth/login → Login and receive JWT token
 
+---
 📚 Book Management (Admin Only)
 POST /api/books → Add new book
 
@@ -127,6 +132,8 @@ POST /api/return/:bookId → Return book (auto fee calculation if late)
 GET /api/reports/member → Member: View borrowed/returned books & pending fees
 
 GET /api/reports/admin → Admin: View all borrowed books & pending fees of members
+
+---
 
 ✅ Example Request & Response
 Login
@@ -148,6 +155,10 @@ Response
     "role": "Member"
   }
 }
+
+---
+
+
 🔮 Future Enhancements
 Pagination & filtering for books
 
@@ -156,6 +167,9 @@ Email notifications for overdue books
 Payment gateway integration for fees
 
 Swagger API documentation
+
+---
+
 
 👨‍💻 Author
 Ishan Jain
