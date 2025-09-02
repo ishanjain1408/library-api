@@ -1,4 +1,3 @@
-// validate.js
 import ApiError from '../utils/ApiError.js';
 
 export const validate = (schema, property = 'body') => {
