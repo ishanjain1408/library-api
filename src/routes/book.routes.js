@@ -8,7 +8,7 @@ import { createBookSchema, updateBookSchema, listQuerySchema } from '../validato
 const router = Router();
 
 // List books (authenticated users; change to Admin-only if you want to strictly follow spec)
-router.get('/', auth, validate(listQuerySchema, 'query'), listBooks);
+router.get('/', auth, permit('Admin'), validate(listQuerySchema, 'query'), listBooks);
 
 // Admin-only management
 router.post('/', auth, permit('Admin'), validate(createBookSchema), createBook);
