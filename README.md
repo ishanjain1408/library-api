@@ -32,7 +32,7 @@ Library-Management-System/
 
 ## ⚙️ Setup Instructions
 
-### 1. Clone Repository
+1. Clone Repository
 git clone https://github.com/ishanjain1408/library-api.git
 cd library-management-system
 
